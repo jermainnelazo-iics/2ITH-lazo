@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Event</title>
+   
+</head>
+ 
+<body>
+ <script src="eventform.js"></script>
+
+
+<form name="myForm" onsubmit = "return(validate());">
+    
+    <br><br>
+<table width="700px">
+</tr>
+
+<tr>
+<td>
+    <label for="Type">Event Type: </label>
+</td>     
+<td>
+    <select id="Type">
+            <option value="choose" >Choose one</option>
+            <option value="one">Event type 1</option>
+            <option value="two">Event type 2</option>
+            <option value="three">Event type 3</option>   
+    </select>
+    
+</td>
+</tr>
+
+    <br><br>
+
+<tr>
+<td><br>
+    <label for="title">Event Title: </label>
+</td>
+<td><br>
+    <input type="text" name="title" size="70">
+</td>
+</tr>
+
+<tr>
+    <td><br>
+    <label for="date">Event Dates: </label>
+</td> 
+<td><br>
+    <input type="date" name="date1" size="10"> to <input type="date" name="date2" size="10">
+</td>
+</tr>
+
+<tr>
+    <td><br>
+        <label for="postdate">Posting Date: </label>
+    </td>
+    <td><br>
+        <input type="date" name="postdate" size="10">
+</td>
+</tr>
+</table>
+
+<br>
+<table width="700px">
+<tr>
+    <td>
+        <input type="checkbox" value="question1">
+        <label for="question1"> Is Registration Required?</label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question2">
+        <label for="question2"> Is this event associated with any Faimily Programs?</label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question3">
+        <label for="question3"> Upon Registration Completion, Are Users to Receive an Auto-Generated Email? </label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question4">
+        <label for="question4"> Is There a Point of Contact? </label><br>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <input type="checkbox" value="question5">
+        <label for="question5"> Is There a Hosting Command Point of Contact? </label><br>
+    </td>
+</tr>
+    </table>
+
+    <br><br><br>
+    
+    <input type="submit" style="width:80px" value="Save"></button>
+    &nbsp;&nbsp;&nbsp;&nbsp;    
+    <input type="reset" style="width:80px" value="Cancel"></button>
+</form>
+</body>
+
+</html>
